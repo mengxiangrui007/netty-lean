@@ -1,4 +1,4 @@
-package com.tk.netty.io;
+package com.tk.io;
 
 import java.io.IOException;
 import java.net.Socket;
