@@ -13,14 +13,31 @@
         <module>netty-lean-nio</module>
     </modules>
     <properties>
-        <netty.all.verion>4.1.6.Final</netty.all.verion>
+        <netty.all.version>4.1.6.Final</netty.all.version>
+        <protobuf.version>2.5.0</protobuf.version>
+        <marshalling.version>1.4.10.Final</marshalling.version>
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
-                <version>${netty.all.verion}</version>
+                <version>${netty.all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.marshalling</groupId>
+                <artifactId>jboss-marshalling</artifactId>
+                <version>${marshalling.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.marshalling</groupId>
+                <artifactId>jboss-marshalling-serial</artifactId>
+                <version>${marshalling.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
