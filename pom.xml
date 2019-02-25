@@ -16,6 +16,8 @@
         <netty.all.version>4.1.6.Final</netty.all.version>
         <protobuf.version>2.5.0</protobuf.version>
         <marshalling.version>1.4.10.Final</marshalling.version>
+        <jibx.version>1.2.5</jibx.version>
+        <commons.logging.verison>1.1.1</commons.logging.verison>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -38,6 +40,31 @@
                 <groupId>org.jboss.marshalling</groupId>
                 <artifactId>jboss-marshalling-serial</artifactId>
                 <version>${marshalling.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-bind</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-run</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-extras</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-schema</artifactId>
+                <version>${jibx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jibx</groupId>
+                <artifactId>jibx-tools</artifactId>
+                <version>${jibx.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
